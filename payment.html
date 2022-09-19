@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Payment</title>
+</head>
+
+<body>
+    <secttion class="container payment">
+        <div class="contact-body">
+            <div class="row contact-header">
+                <div class="col-md-3 logo vertical-middle">
+                    <img src="img/logo.jpg" alt="logo">
+                </div>
+                <div class="col-md-9 vertical-middle contact-title">
+                    <h3>Payment</h3>
+                </div>
+            </div>
+            <div class="row payment-option mt-3">
+                <h6>Please select your payment method.</h6>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        <img class="img-fluid" src="img/khalti.png" alt="khalti image">
+                    </label>
+                </div>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        <img class="img-fluid" src="img/esewa.png" alt="esewa image">
+                    </label>
+                </div>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        <img class="img-fluid" src="img/connectips.png" alt="connectips image">
+                    </label>
+                </div>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        <img class="img-fluid" src="img/imepay.png" alt="imepay image">
+                    </label>
+                </div>
+                <div class="form-check col-md-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                    <label class="form-check-label" for="flexRadioDefault5">
+                        <img class="img-fluid" src="img/fonepay.png" alt="fonepay image">
+                    </label>
+                </div>
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <h6>Please fill this form if your paying via bank</h6>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Bank's Name" required>
+                    <div class="invalid-feedback">
+                        Pleaseenter your bank's name.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" id="validationCustom02"
+                        placeholder="Enter Card Holder's Name" required>
+                    <div class="invalid-feedback">
+                        Please enter card holder's name.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Credit Card Number"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter your credit card number.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Exp Date" required>
+                    <div class="invalid-feedback">
+                        Please enter expiry date of card.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="State/Province"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter your state/province.
+                    </div>
+                </div>
+                <div class="col-12 text-end mt-5">
+                    <button class="mybtn s-btn text-dark" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </secttion>
+</body>
+
+<script>
+    //JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+</html>

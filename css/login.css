@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box
+}
+
+/*adding color, padding and border to the sign up text */
+.head-sign-in {
+    color: white;
+    background-color: rgb(23, 221, 221);
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-radius: 10px;
+}
+
+/* margin and padding for form*/
+form {
+    margin: 0% 35% 0% 35%;
+    padding: 1%;
+    font-size: 0.8em;
+}
+
+.reset{
+transform: translateY(-15px);
+}
+
+
+/* Add border and shadow to container elements */
+.container {
+    border-radius: 25px;
+   display: block;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#middle-section {
+    padding: 5% 7% 15%;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.signupbtn {
+   align-items: center;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+
+}
+
+button:hover {
+    background-color: black;
+}
+
+.text {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.login-head{
+    display: flex;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.redirect{
+    margin-right: 30px;
+}
+.submit{
+    display: flex;
+    flex-direction: row;
+}
+

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box
+}
+
+/*adding color, padding and border to the sign up text */
+.head-sign-up {
+    color: white;
+    background-color: rgb(0, 26, 110);
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-radius: 10px;
+}
+
+/* margin and padding for form*/
+form {
+    margin: 0% 35% 0% 35%;
+    padding: 1.5%;
+    font-size: 0.8em;
+}
+
+/* Add border and shadow to container elements */
+.container {
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#middle-section {
+    padding: 5% 7% 15% 7%;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.clearfix {
+    padding-left: 22%;
+
+}
+
+.signupbtn {
+    margin-left: 20px;
+}
+
+/* Set a style for all buttons */
+button {
+    float: left;
+    background-color: #04AA6D;
+    color: white;
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    background-color: #f44336;
+}
+
+
+/*adding captcha */
+.captcha {
+    background-color: #f9f9f9;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    color: #4c4a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    margin: 1.5em .4em .4em .4em;
+}
+
+.text {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    align-self: flex-end;
+    margin: 0.5em 1em;
+}
+
+.logo p {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 700;
+    margin: .4em 0 .2em 0;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}

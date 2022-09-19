@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Stream</title>
+</head>
+
+<body>
+    <secttion>
+        <div class="stream">
+            <div class="container">
+                <div class="stream-head d-flex justify-content-between vertical-middle">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                    </div>
+                    <div class="vertical-middle">
+                        <a href="payment.html" class="mybtn text-dark">paynow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="stream-img mt-5">
+                <div class="text-center">
+                    <img class="img-fluid" src="img/stadium.jpg" alt="stream image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sportek mt-3">
+                        <a href="https://totalsportk.org" target="_blank">totasportek</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sportek mt-3">
+                        <a href=" https://www.ronaldo7.net/" target="_blank">ronaldo7</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sportek mt-3">
+                        <a href="https://www.youtube.com/" target="_blank">youtube</a>
+                    </div>
+
+
+            </div>
+            <div class="stream-bottom">
+                <form class="row g-3 justify-content-between needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div>
+                                <label for="validationCustom01" class="form-label">Comment</label><br>
+                                <textarea class="stream-comment" id="review" name="review" rows="4" cols="50"
+                                    placeholder="Your Message" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter any message.
+                                </div>
+                            </div>
+                            <div class="col mt-5">
+                                <button class="mybtn text-dark align-self-end mt-5 ms-2" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  text-end align-self-end mb-2">
+                        <a href="login.html" class="mybtn text-dark" type="submit">LogOut</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </secttion>
+</body>
+<script>
+    //JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+</html>

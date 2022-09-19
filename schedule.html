@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Schedule</title>
+</head>
+
+<body>
+    <secttion>
+        <div class="stream">
+            <div class="container">
+                <div class="stream-head d-flex justify-content-between vertical-middle">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="stream-img mt-5">
+                <div class="text-center">
+                    <img class="img-fluid" src="img/stadium.jpg" alt="stream image">
+                </div>
+            </div>
+            <div class="schedule-btn text-end align-self-end mt-3 mb-2">
+                <a href="login.html" class="mybtn text-dark" type="submit">Log Out</a>
+            </div>
+        </div>
+
+    </secttion>
+</body>
+<script>
+    //JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+</html>

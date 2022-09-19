@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Contact us</title>
+</head>
+
+<body>
+    <secttion class="container contact">
+        <div class="contact-body">
+            <div class="row contact-header">
+                <div class="col-md-3 logo vertical-middle">
+                    <img src="img/logo.jpg" alt="logo">
+                </div>
+                <div class="col-md-9 vertical-middle contact-title">
+                    <h3>Contact Form</h3>
+                </div>
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Full Name"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter your full name.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">Email Addess</label>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="Enter Email Address"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter valid email.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Contact</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Your Contact"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter your contact no.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Your Address"
+                        required>
+                    <div class="invalid-feedback">
+                        Please enter your address.
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <button class="mybtn text-dark" type="submit">Submit form</button>
+                </div>
+            </form>
+            <div class="row m-0">
+                <div class="col-md-4 text-center text-capitalize vertical-middle contact-footer d-grid">
+                    <div class="vertical-middle">
+                        <h6>contact</h6>
+                        <p> +977 9883838383</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-capitalize vertical-middle contact-footer d-grid">
+                    <div class="vertical-middle">
+                        <h6>Email:</h6>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-capitalize vertical-middle contact-footer d-grid">
+                    <div class="vertical-middle">
+                        <h6>address:</h6>
+                        <p>Kathmandu, nepal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secttion>
+</body>
+
+<script>
+    //JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+</html>
